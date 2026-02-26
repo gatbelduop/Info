@@ -501,7 +501,7 @@ span {
         display: flex;
         flex-direction: column;
         background: #002f5e;
-        transition: all 0.5s ease;
+        transition: all 0.2s ease-out;
         backdrop-filter: blur(10px);
     }
 
@@ -571,3 +571,4 @@ span {
     }
 
 }
+
