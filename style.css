@@ -496,8 +496,8 @@ span {
         position: absolute;
         top: 100%;
         right: 100%;
-        width: 255px;
-        min-width: 100vh;
+        width: auto;
+        min-width: auto;
         display: flex;
         flex-direction: column;
         background: #002f5e;
@@ -569,4 +569,5 @@ span {
     html {
         font-size: 55%;
     }
+
 }
