@@ -17,7 +17,7 @@ document.querySelectorAll('.navbar a').forEach(link => {
     navbar.classList.remove('active');
 }
 const typed = new Typed('.multiple-text', {
-    strings: ['Web Developer', 'YouTuber', 'Communications Specialist', 'Language Translator', 'Data Analyst', 'Multimedia Designer', 'Cybersecurity Specialist', 'Tutor'],
+    strings: ['Web Developer', 'YouTuber', 'Communications Specialist', 'Language Translator', 'Data Analyst', 'Multimedia Designer', 'Cybersecurity Specialist', 'Believer', 'Tutor'],
     typeSpeed: 50,
     backSpeed: 50,
     backDelay: 1000,
