@@ -195,45 +195,32 @@
     </section>
 
     <!--------------Contact Section Code----------->
-    <section id="contact" style="max-width: 600px; margin: 40px auto; padding: 25px; font-family: Arial, sans-serif; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <h2 style="margin-top: 0; color: #1B365D;">Get in Touch</h2>
-  <p style="color: #555; font-size: 15px;">Have a question or want to work together? Send me a message below and it will go straight to my inbox.</p>
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
 
-  <form action="https://web3forms.com" method="POST">
-    <!-- Paste your Web3Forms Access Key below -->
-    <input type="hidden" name="access_key" value="6eab1635-9f41-4371-b7c5-56da2859ad76">
+    <form action="https://web3forms.com" method="POST">
+        <!-- Replace PASTE_YOUR_ACCESS_KEY_HERE with your key from web3forms.com -->
+        <input type="hidden" name="access_key" value="PASTE_YOUR_ACCESS_KEY_HERE">
+        <input type="hidden" name="subject" value="New Message from Your GitHub Portfolio">
+        <input type="hidden" name="from_name" value="Portfolio Contact Form">
+        <input type="checkbox" name="botcheck" style="display: none;">
 
-    <!-- Custom Email Subject & Sender Name -->
-    <input type="hidden" name="subject" value="New Message from Your GitHub Portfolio">
-    <input type="hidden" name="from_name" value="Portfolio Contact Form">
+        <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+        </div>
 
-    <!-- Anti-spam honeypot field -->
-    <input type="checkbox" name="botcheck" style="display: none;">
+        <div class="input-box">
+            <input type="tel" name="phone" placeholder="Mobile Number">
+            <input type="text" name="email_subject" placeholder="Email Subject" required>
+        </div>
 
-    <div style="margin-bottom: 15px;">
-      <label for="name" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Your Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your full name" required
-        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
-    </div>
-
-    <div style="margin-bottom: 15px;">
-      <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Your Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email address" required
-        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
-    </div>
-
-    <div style="margin-bottom: 20px;">
-      <label for="message" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required
-        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;"></textarea>
-    </div>
-
-    <button type="submit"
-      style="background-color: #1B365D; color: #ffffff; padding: 12px 24px; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; width: 100%;">
-      Send Message
-    </button>
-  </form>
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        
+        <input type="submit" value="Send Message" class="btn">
+    </form>
 </section>
+
 
 
     <!--------------Footer Section Code----------->
